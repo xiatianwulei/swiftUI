@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A93D48AC2669B7C40078A084 /* wandaFilmSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D48AB2669B7C40078A084 /* wandaFilmSwiftUIApp.swift */; };
+		A93D48AE2669B7C40078A084 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D48AD2669B7C40078A084 /* ContentView.swift */; };
+		A93D48B02669B7C90078A084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93D48AF2669B7C90078A084 /* Assets.xcassets */; };
+		A93D48B32669B7C90078A084 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93D48B22669B7C90078A084 /* Preview Assets.xcassets */; };
+		A93D48BC2669B7EF0078A084 /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D48BB2669B7EF0078A084 /* ActivityListView.swift */; };
+		A93D48BF2669D4920078A084 /* ActivityListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D48BE2669D4920078A084 /* ActivityListCellView.swift */; };
+		B8B37076A2F50BC88892FD8D /* Pods_wandaFilmSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614621A94451F319E4E21DE /* Pods_wandaFilmSwiftUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C2B83BBC38B254D54574B87 /* Pods-wandaFilmSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wandaFilmSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-wandaFilmSwiftUI/Pods-wandaFilmSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		A614621A94451F319E4E21DE /* Pods_wandaFilmSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wandaFilmSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93D48A82669B7C40078A084 /* wandaFilmSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wandaFilmSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93D48AB2669B7C40078A084 /* wandaFilmSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wandaFilmSwiftUIApp.swift; sourceTree = "<group>"; };
+		A93D48AD2669B7C40078A084 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A93D48AF2669B7C90078A084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A93D48B22669B7C90078A084 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A93D48B42669B7C90078A084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A93D48BB2669B7EF0078A084 /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListView.swift; sourceTree = "<group>"; };
+		A93D48BE2669D4920078A084 /* ActivityListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListCellView.swift; sourceTree = "<group>"; };
+		C562E435B56043BBB855AC5E /* Pods-wandaFilmSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wandaFilmSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-wandaFilmSwiftUI/Pods-wandaFilmSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A93D48A52669B7C40078A084 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8B37076A2F50BC88892FD8D /* Pods_wandaFilmSwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		426460EA7D319B8AD187B43D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A614621A94451F319E4E21DE /* Pods_wandaFilmSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5828BD7CA4C58E8724C952C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C562E435B56043BBB855AC5E /* Pods-wandaFilmSwiftUI.debug.xcconfig */,
+				0C2B83BBC38B254D54574B87 /* Pods-wandaFilmSwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A93D489F2669B7C40078A084 = {
+			isa = PBXGroup;
+			children = (
+				A93D48AA2669B7C40078A084 /* wandaFilmSwiftUI */,
+				A93D48A92669B7C40078A084 /* Products */,
+				5828BD7CA4C58E8724C952C4 /* Pods */,
+				426460EA7D319B8AD187B43D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A93D48A92669B7C40078A084 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A93D48A82669B7C40078A084 /* wandaFilmSwiftUI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A93D48AA2669B7C40078A084 /* wandaFilmSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				A93D48AB2669B7C40078A084 /* wandaFilmSwiftUIApp.swift */,
+				A93D48AD2669B7C40078A084 /* ContentView.swift */,
+				A93D48C1266A27D60078A084 /* ActivityList */,
+				A93D48AF2669B7C90078A084 /* Assets.xcassets */,
+				A93D48B42669B7C90078A084 /* Info.plist */,
+				A93D48B12669B7C90078A084 /* Preview Content */,
+			);
+			path = wandaFilmSwiftUI;
+			sourceTree = "<group>";
+		};
+		A93D48B12669B7C90078A084 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A93D48B22669B7C90078A084 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A93D48C1266A27D60078A084 /* ActivityList */ = {
+			isa = PBXGroup;
+			children = (
+				A93D48BB2669B7EF0078A084 /* ActivityListView.swift */,
+				A93D48BE2669D4920078A084 /* ActivityListCellView.swift */,
+			);
+			path = ActivityList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A93D48A72669B7C40078A084 /* wandaFilmSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A93D48B72669B7C90078A084 /* Build configuration list for PBXNativeTarget "wandaFilmSwiftUI" */;
+			buildPhases = (
+				4F503D9310ED0464F4822133 /* [CP] Check Pods Manifest.lock */,
+				A93D48A42669B7C40078A084 /* Sources */,
+				A93D48A52669B7C40078A084 /* Frameworks */,
+				A93D48A62669B7C40078A084 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wandaFilmSwiftUI;
+			productName = wandaFilmSwiftUI;
+			productReference = A93D48A82669B7C40078A084 /* wandaFilmSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A93D48A02669B7C40078A084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A93D48A72669B7C40078A084 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = A93D48A32669B7C40078A084 /* Build configuration list for PBXProject "wandaFilmSwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A93D489F2669B7C40078A084;
+			productRefGroup = A93D48A92669B7C40078A084 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A93D48A72669B7C40078A084 /* wandaFilmSwiftUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A93D48A62669B7C40078A084 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93D48B32669B7C90078A084 /* Preview Assets.xcassets in Resources */,
+				A93D48B02669B7C90078A084 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F503D9310ED0464F4822133 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wandaFilmSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A93D48A42669B7C40078A084 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93D48AE2669B7C40078A084 /* ContentView.swift in Sources */,
+				A93D48BF2669D4920078A084 /* ActivityListCellView.swift in Sources */,
+				A93D48AC2669B7C40078A084 /* wandaFilmSwiftUIApp.swift in Sources */,
+				A93D48BC2669B7EF0078A084 /* ActivityListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A93D48B52669B7C90078A084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A93D48B62669B7C90078A084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A93D48B82669B7C90078A084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C562E435B56043BBB855AC5E /* Pods-wandaFilmSwiftUI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"wandaFilmSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = wandaFilmSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hongrui.diao.wandaFilmSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A93D48B92669B7C90078A084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C2B83BBC38B254D54574B87 /* Pods-wandaFilmSwiftUI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"wandaFilmSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = wandaFilmSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hongrui.diao.wandaFilmSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A93D48A32669B7C40078A084 /* Build configuration list for PBXProject "wandaFilmSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A93D48B52669B7C90078A084 /* Debug */,
+				A93D48B62669B7C90078A084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A93D48B72669B7C90078A084 /* Build configuration list for PBXNativeTarget "wandaFilmSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A93D48B82669B7C90078A084 /* Debug */,
+				A93D48B92669B7C90078A084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A93D48A02669B7C40078A084 /* Project object */;
+}
