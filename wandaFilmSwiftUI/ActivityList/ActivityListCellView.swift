@@ -15,7 +15,6 @@ struct ActivityListCellView: View {
                 Image("haizei")
                     .resizable()
                     .frame(width: geo.size.width, height: 200)
-                    .background(Color.red)
                     .aspectRatio(contentMode: .fill)
             }
             

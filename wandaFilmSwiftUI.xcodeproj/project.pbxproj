@@ -13,6 +13,9 @@
 		A93D48B32669B7C90078A084 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93D48B22669B7C90078A084 /* Preview Assets.xcassets */; };
 		A93D48BC2669B7EF0078A084 /* ActivityListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D48BB2669B7EF0078A084 /* ActivityListView.swift */; };
 		A93D48BF2669D4920078A084 /* ActivityListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D48BE2669D4920078A084 /* ActivityListCellView.swift */; };
+		A953B714266F6BD800093333 /* MineHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953B713266F6BD800093333 /* MineHomeView.swift */; };
+		A953B717266F6F3A00093333 /* MineHomeJumpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953B716266F6F3900093333 /* MineHomeJumpView.swift */; };
+		A953B71A266F704600093333 /* MineHomeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A953B719266F704600093333 /* MineHomeHeadView.swift */; };
 		B8B37076A2F50BC88892FD8D /* Pods_wandaFilmSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A614621A94451F319E4E21DE /* Pods_wandaFilmSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		A93D48B42669B7C90078A084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A93D48BB2669B7EF0078A084 /* ActivityListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListView.swift; sourceTree = "<group>"; };
 		A93D48BE2669D4920078A084 /* ActivityListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListCellView.swift; sourceTree = "<group>"; };
+		A953B713266F6BD800093333 /* MineHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHomeView.swift; sourceTree = "<group>"; };
+		A953B716266F6F3900093333 /* MineHomeJumpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHomeJumpView.swift; sourceTree = "<group>"; };
+		A953B719266F704600093333 /* MineHomeHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineHomeHeadView.swift; sourceTree = "<group>"; };
 		C562E435B56043BBB855AC5E /* Pods-wandaFilmSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wandaFilmSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-wandaFilmSwiftUI/Pods-wandaFilmSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +62,6 @@
 				C562E435B56043BBB855AC5E /* Pods-wandaFilmSwiftUI.debug.xcconfig */,
 				0C2B83BBC38B254D54574B87 /* Pods-wandaFilmSwiftUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +88,7 @@
 			children = (
 				A93D48AB2669B7C40078A084 /* wandaFilmSwiftUIApp.swift */,
 				A93D48AD2669B7C40078A084 /* ContentView.swift */,
+				A953B712266F6BAD00093333 /* Mine */,
 				A93D48C1266A27D60078A084 /* ActivityList */,
 				A93D48AF2669B7C90078A084 /* Assets.xcassets */,
 				A93D48B42669B7C90078A084 /* Info.plist */,
@@ -106,6 +112,16 @@
 				A93D48BE2669D4920078A084 /* ActivityListCellView.swift */,
 			);
 			path = ActivityList;
+			sourceTree = "<group>";
+		};
+		A953B712266F6BAD00093333 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				A953B713266F6BD800093333 /* MineHomeView.swift */,
+				A953B716266F6F3900093333 /* MineHomeJumpView.swift */,
+				A953B719266F704600093333 /* MineHomeHeadView.swift */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A93D48AE2669B7C40078A084 /* ContentView.swift in Sources */,
+				A953B71A266F704600093333 /* MineHomeHeadView.swift in Sources */,
 				A93D48BF2669D4920078A084 /* ActivityListCellView.swift in Sources */,
+				A953B714266F6BD800093333 /* MineHomeView.swift in Sources */,
 				A93D48AC2669B7C40078A084 /* wandaFilmSwiftUIApp.swift in Sources */,
+				A953B717266F6F3A00093333 /* MineHomeJumpView.swift in Sources */,
 				A93D48BC2669B7EF0078A084 /* ActivityListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,6 +22,9 @@ struct ContentView: View {
                 .tabItem {
                     Label("活动", systemImage: "star")
                 }
+            MineHomeView().tabItem {
+                    Label("我的", systemImage: "heart")
+                }
         }
     }
 }
