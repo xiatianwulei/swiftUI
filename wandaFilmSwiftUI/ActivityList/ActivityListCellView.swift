@@ -8,18 +8,24 @@
 import SwiftUI
 
 struct ActivityListCellView: View {
+    
+    @State var activity:String = ""
+    
     var body: some View {
-        
-        VStack {
+        VStack(alignment:.leading) {
             GeometryReader { geo in
                 Image("haizei")
                     .resizable()
+                    .background(Color.red)
                     .frame(width: geo.size.width, height: 200)
+                    .alignmentGuide(.leading, computeValue: { dimension in
+                        dimension[.leading]
+                    })
                     .aspectRatio(contentMode: .fill)
             }
             
             HStack {
-                Text("优惠券密码卡活动-抽取")
+                Text("\(activity)")
                 Spacer()
             }
             
@@ -30,7 +36,7 @@ struct ActivityListCellView: View {
                 )
                 Spacer()
             }
-        }
+        }  
     }
 }
 

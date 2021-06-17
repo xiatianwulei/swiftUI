@@ -9,10 +9,15 @@ import SwiftUI
 
 struct MineHomeView: View {
     
+  @State  var titleStrAry:[String] = ["我的勋章","会员码","会员手册","积分中心","我的影单","我的奖品","智能客服","联系我们","设置"]
+    
     var body: some View {
-        VStack{
+        List{
             MineHomeHeadView().frame( height: 300)
-            MineHomeJumpView()
+            ForEach(titleStrAry, id: \.self, content: { element in
+                MineHomeJumpView(title: element)
+            })
+            
         }
     }
 }

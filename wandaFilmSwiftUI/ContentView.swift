@@ -25,6 +25,10 @@ struct ContentView: View {
             MineHomeView().tabItem {
                     Label("我的", systemImage: "heart")
                 }
+            
+            ContentViewFrame().tabItem {
+                Label("studyFrameUI", systemImage: "heart")
+            }
         }
     }
 }

@@ -16,18 +16,19 @@ struct ActivityListView: View {
     var body: some View {
         
         NavigationView {
-            ZStack {
-                List {
-                    ForEach(datalist,id: \.self) { element in
-                        VStack {
-                            ActivityListCellView()
-                                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                                .listRowBackground(Color.green)
-                        }.frame(height: 270)
-                    }
-                }.navigationTitle("活动")
-                .navigationBarTitleDisplayMode(.inline)
+            List{
+                VStack {
+                    ActivityListHeadActionView()
+                    Spacer(minLength: 5)
+                }
+                .listRowInsets(EdgeInsets()) //  去掉两侧间隙
+                ForEach(datalist, id: \.self) { (element) in
+                    ActivityListCellView(activity: element)
+                        .frame(height: 270)
+                }
             }
+            .navigationTitle("活动列表")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }
