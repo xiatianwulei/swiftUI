@@ -11,7 +11,7 @@ struct ActivityListHeadActionView: View {
     var body: some View {
         
         
-        HStack(spacing:0){
+        HStack(spacing:1){
             
             VStack(alignment:.center){
                 Spacer(minLength: 20)

@@ -10,7 +10,7 @@ import SwiftUI
 struct MineHomeHeadView: View {
     var body: some View {
         
-        HStack{
+        LazyHStack{
             Spacer(minLength: 15)
             Image("haha")
                 .frame(width: 77, height: 77, alignment: .leading)
@@ -57,7 +57,8 @@ struct MineHomeHeadView: View {
                     
                 }
             }.frame(alignment: .leading)
-            
+ 
+
             Spacer()
         }
         

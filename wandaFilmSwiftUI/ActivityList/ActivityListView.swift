@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ActivityListView: View {
     
-    var datalist:[String] = ["111","222","3333","3333","3333","222","3333","3333","3333","222","3333","3333","3333","222","3333","3333","3333"]
+    var datalist:[String] = ["活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称活动名称","222","3333","3333","3333","222","3333","3333","3333","222","3333","3333","3333","222","3333","3333","3333"]
     init() {
     }
     
@@ -26,6 +26,7 @@ struct ActivityListView: View {
                     ActivityListCellView(activity: element)
                         .frame(height: 270)
                 }
+//                .listRowInsets(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
             }
             .navigationTitle("活动列表")
             .navigationBarTitleDisplayMode(.inline)

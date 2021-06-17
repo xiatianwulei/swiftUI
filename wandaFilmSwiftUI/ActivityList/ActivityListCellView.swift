@@ -12,31 +12,15 @@ struct ActivityListCellView: View {
     @State var activity:String = ""
     
     var body: some View {
-        VStack(alignment:.leading) {
-            GeometryReader { geo in
-                Image("haizei")
-                    .resizable()
-                    .background(Color.red)
-                    .frame(width: geo.size.width, height: 200)
-                    .alignmentGuide(.leading, computeValue: { dimension in
-                        dimension[.leading]
-                    })
-                    .aspectRatio(contentMode: .fill)
-            }
+        VStack(alignment:.leading, spacing:0) {
             
-            HStack {
-                Text("\(activity)")
-                Spacer()
-            }
-            
-            HStack {
-                Label(
-                    title: { Text("天活动结束") },
-                    icon: { /*@START_MENU_TOKEN@*/Image(systemName: "42.circle")/*@END_MENU_TOKEN@*/ }
-                )
-                Spacer()
-            }
-        }  
+            ActivityListImageView()
+                .frame(height: 200)
+            Spacer(minLength: 5)
+            Text("\(activity)")
+            Text("活动内容")
+            Spacer(minLength: 2)
+        }
     }
 }
 
@@ -46,3 +30,20 @@ struct ActivityListCellView_Previews: PreviewProvider {
             .previewLayout(.fixed(width: 414, height: 270))
     }
 }
+
+struct ActivityListImageView: View {
+    var body: some View {
+        GeometryReader { geo in
+            Image("haizei")
+                .resizable()
+                .background(Color.red)
+                .frame(width: geo.size.width, height: geo.size.height)
+                .alignmentGuide(.leading, computeValue: { dimension in
+                    dimension[.leading]
+                })
+                .aspectRatio(contentMode: .fill)
+        }
+        .background(Color.yellow)
+    }
+}
+
