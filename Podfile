@@ -7,4 +7,5 @@ target 'wandaFilmSwiftUI' do
 
   # Pods for wandaFilmSwiftUI
 
+	pod 'Kingfisher'
 end
