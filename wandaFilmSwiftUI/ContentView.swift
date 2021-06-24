@@ -13,23 +13,28 @@ struct ContentView: View {
         case activityList
     }
     
+    let movieListInfo = MovieListInfo()
+    
     @State  private var selection: WandaFilmTab = .home
     
     var body: some View {
         
         TabView(selection: $selection) {
+            MovieList().tabItem {
+                Label("电影", systemImage: "plus")
+            }
             ActivityListView()
                 .tabItem {
                     Label("活动", systemImage: "star")
                 }
             MineHomeView().tabItem {
-                    Label("我的", systemImage: "heart")
-                }
-            
-            ContentViewFrame().tabItem {
-                Label("studyFrameUI", systemImage: "heart")
+                Label("我的", systemImage: "heart")
             }
-        }
+            
+//            ContentViewFrame().tabItem {
+//                Label("studyFrameUI", systemImage: "heart")
+//            }
+        }.environmentObject(movieListInfo)
     }
 }
 

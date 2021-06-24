@@ -9,25 +9,42 @@ import SwiftUI
 
 struct MineHomeHeadView: View {
     var body: some View {
+        GeometryReader(content: { geometry in
+            LazyVStack(alignment:.leading){
+                MineHomeHeadUserInfoView()
+                    .frame( height: 170)
+                
+                MineHomeOrderQuanCardView()
+                    .frame(width: geometry.size.width)
+            }
+            .frame(width: geometry.size.width, height:geometry.size.height)
+            
+            .background(Color.red)
+        })
         
-        LazyHStack{
+    }
+}
+
+struct MineHomeHeadView_Previews: PreviewProvider {
+    static var previews: some View {
+        MineHomeHeadView().previewLayout(.fixed(width: 414, height: 170))
+    }
+}
+
+struct MineHomeHeadUserInfoView:View {
+    var body: some View {
+        
+        HStack(alignment: .top) {
             Spacer(minLength: 15)
-            Image("haha")
+            Image("haizei")
                 .frame(width: 77, height: 77, alignment: .leading)
                 .background(Color.red)
                 .cornerRadius(38.5)
-            VStack {
-                HStack {
-                    Text("夏天无泪")
-                        .multilineTextAlignment(.leading)
-                        .padding(3)
-                    Spacer(minLength: 20)
-                }
-                
-                HStack {
-                    Text("18501393475")
-                    Spacer()
-                }
+            VStack(alignment: .leading) {
+                Text("夏天无泪")
+                    .multilineTextAlignment(.leading)
+                    .padding(3)
+                Text("18501393475")
                 HStack {
                     Image("haizei")
                         .resizable()
@@ -52,21 +69,62 @@ struct MineHomeHeadView: View {
                         .lineLimit(1)
                         .background(Color.gray)
                         .cornerRadius(8)
-                      
+                    
                     Spacer()
                     
-                }
-            }.frame(alignment: .leading)
- 
-
-            Spacer()
+                    
+                }.frame(alignment: .leading)
+            }
+            
         }
-        
     }
 }
 
-struct MineHomeHeadView_Previews: PreviewProvider {
-    static var previews: some View {
-        MineHomeHeadView().previewLayout(.fixed(width: 414, height: 170))
+struct MineHomeOrderQuanCardView:View {
+    
+    var body: some View {
+        
+        GeometryReader { (make)  in
+            LazyHStack(alignment: .center, spacing: 10) {
+                LazyVStack {
+                    Image("haizei")
+                        .resizable()
+                        .frame(width: 32, height: 32)
+                        .aspectRatio(contentMode: .fit)
+                    Text("订单")
+                        .font(Font.system(size: 12))
+                        .fixedSize(horizontal: true, vertical: false)
+                }
+                .background(Color.yellow)
+                .frame(width:(make.size.width - 20) / 3, height: 77)
+                LazyVStack {
+                    Image("haizei")
+                        .resizable()
+                        .frame(width: 32, height: 32)
+                        .aspectRatio(contentMode: .fit)
+                    Text("订单")
+                        .font(Font.system(size: 12))
+                        .fixedSize(horizontal: true, vertical: false)
+                }
+                .background(Color.yellow)
+                .frame(width:(make.size.width - 20) / 3, height: 77)
+
+                LazyVStack {
+                    Image("haizei")
+                        .resizable()
+                        .frame(width: 32, height: 32)
+                        .aspectRatio(contentMode: .fit)
+                    Text("订单")
+                        .font(Font.system(size: 12))
+
+                }
+                .background(Color.yellow)
+                .frame(width:(make.size.width - 20) / 3, height: 77)
+
+                
+            }
+        }
+        
     }
+    
 }
