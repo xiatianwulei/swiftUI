@@ -20,7 +20,6 @@ struct SwiftUIFrameStudyView: View {
                 
                 VStack {
                     LittleSquares(total: 7)
-                        .border(Color.green)
                         .fixedSize(horizontal: self.fixedSize, vertical: false)
                 }
                 .frame(width: self.width)

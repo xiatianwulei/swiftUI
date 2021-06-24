@@ -15,33 +15,21 @@ struct MovieList: View {
         
         NavigationView {
             List {
-                ForEach(movieListInfo.movieList) { (element) in
-                    Text("\(element.movieName)")
+                ForEach(movieListInfo.movieList) {(element) in
+                    MovieListInfoCell(movieDetail: element) { isLike in
+                        element.isLike = isLike
+                        movieListInfo.toggle(element)
+                    }
+                    
                 }
             }
             .navigationTitle("电影列表")
-//            .navigationBarItems(trailing: Button(action: {
-//                let movieDetail = MovieDetail()
-//                movieDetail.movieName = "haizi"
-//                movieDetail.movidId = 1
-//                movieDetail.movieDesc = "做大做强"
-//                movieListInfo.add(movieDetail)
-//            }, label: {
-//                Image.init(systemName: "plus")
-//                Text("添加电影")
-//            }))
-//            .navigationBarItems(leading: Button(action: {
-//                movieListInfo.removieAllMovies()
-//            }, label: {
-//                Image.init(systemName: "plus")
-//                Text("清除电影")
-//            }))
-            
             .navigationBarItems(leading: Button(action: {
                 let movieDetail = MovieDetail()
-                movieDetail.movieName = "haizi"
+                movieDetail.movieName = "做大做大做强"
                 movieDetail.movidId = 1
-                movieDetail.movieDesc = "做大做强"
+                movieDetail.movieDesc = "做大做强做大做强做大做强做大做强做大做强做大做强做大做强"
+                movieDetail.isLike = false
                 movieListInfo.add(movieDetail)
             }, label: {
                 Image.init(systemName: "plus")
@@ -49,11 +37,9 @@ struct MovieList: View {
             }) , trailing:  Button(action: {
                 movieListInfo.removieAllMovies()
             }, label: {
-                Image.init(systemName: "plus")
                 Text("清除电影")
             }))
         }
-        
     }
 }
 

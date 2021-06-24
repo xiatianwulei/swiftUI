@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A9217380268326F7004FE325 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A921737F268326F7004FE325 /* MovieModel.swift */; };
 		A9217384268335CD004FE325 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9217383268335CD004FE325 /* MovieList.swift */; };
+		A9217387268416B8004FE325 /* MovieListInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9217386268416B8004FE325 /* MovieListInfoCell.swift */; };
 		A93D48AC2669B7C40078A084 /* wandaFilmSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D48AB2669B7C40078A084 /* wandaFilmSwiftUIApp.swift */; };
 		A93D48AE2669B7C40078A084 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93D48AD2669B7C40078A084 /* ContentView.swift */; };
 		A93D48B02669B7C90078A084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A93D48AF2669B7C90078A084 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		A614621A94451F319E4E21DE /* Pods_wandaFilmSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wandaFilmSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A921737F268326F7004FE325 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		A9217383268335CD004FE325 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
+		A9217386268416B8004FE325 /* MovieListInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListInfoCell.swift; sourceTree = "<group>"; };
 		A93D48A82669B7C40078A084 /* wandaFilmSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wandaFilmSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93D48AB2669B7C40078A084 /* wandaFilmSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wandaFilmSwiftUIApp.swift; sourceTree = "<group>"; };
 		A93D48AD2669B7C40078A084 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				A9217383268335CD004FE325 /* MovieList.swift */,
+				A9217386268416B8004FE325 /* MovieListInfoCell.swift */,
 			);
 			path = Movie;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				A9DA876E2679E3C600FD2639 /* alignment-guides-tool.swift in Sources */,
 				A93D48AE2669B7C40078A084 /* ContentView.swift in Sources */,
 				A953B71A266F704600093333 /* MineHomeHeadView.swift in Sources */,
+				A9217387268416B8004FE325 /* MovieListInfoCell.swift in Sources */,
 				A93D48BF2669D4920078A084 /* ActivityListCellView.swift in Sources */,
 				A9217384268335CD004FE325 /* MovieList.swift in Sources */,
 				A953B714266F6BD800093333 /* MineHomeView.swift in Sources */,

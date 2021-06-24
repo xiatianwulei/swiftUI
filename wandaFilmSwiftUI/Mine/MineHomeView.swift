@@ -39,12 +39,12 @@ struct MineHomeView: View {
             .frame( height: 450)
             .background(Color.blue)
             .disabled(true)  //不让 List 滚动
+            .listStyle(PlainListStyle())
         }
         .listStyle(PlainListStyle())
         .background(Color.green)
         .edgesIgnoringSafeArea(.all)
     }
-    
     
 }
 

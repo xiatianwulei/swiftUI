@@ -12,6 +12,7 @@ class MovieDetail: Identifiable, Codable {
     var movieName:String = ""
     var movieDesc:String = ""
     var movidId:Int?
+    var isLike:Bool = false
 }
 
 class MovieListInfo: ObservableObject {
@@ -26,11 +27,6 @@ class MovieListInfo: ObservableObject {
         }
     }
     
-   private func save()  {
-        if let encodedData = try? JSONEncoder().encode(movieList) {
-            UserDefaults.standard.setValue(encodedData, forKey: MovieListInfo.saveKey)
-        }
-    }
     func add(_ movie:MovieDetail) {
         movieList.append(movie)
         save()
@@ -38,5 +34,15 @@ class MovieListInfo: ObservableObject {
     func removieAllMovies() {
         movieList.removeLast()
         save()
+    }
+    func toggle(_ movieDetail:MovieDetail) {
+        movieDetail.isLike.toggle()
+        objectWillChange.send()
+        save()
+    }
+    private func save()  {
+        if let encodedData = try? JSONEncoder().encode(movieList) {
+            UserDefaults.standard.setValue(encodedData, forKey: MovieListInfo.saveKey)
+        }
     }
 }
