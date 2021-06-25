@@ -6,20 +6,29 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ActivityListCellView: View {
     
-    @State var activity:String = ""
+    
+    var activityDetail:ActivityListDetail?
     
     var body: some View {
-        VStack(alignment:.leading, spacing:0) {
-            
-            ActivityListImageView()
-                .frame(height: 200)
-            Spacer(minLength: 5)
-            Text("\(activity)")
-            Text("活动内容")
-            Spacer(minLength: 2)
+        
+        
+        GeometryReader { geo in
+            VStack(alignment: .leading) {
+                
+                ActivityListImageView(imageUrlStr: activityDetail?.imgUrl ?? "")
+                    .frame(height: 200)
+                Spacer(minLength: 1)
+                Text("\(activityDetail?.title ?? "")")
+                    .lineLimit(1)
+                HStack{
+                    Spacer()
+                    Text("\(activityDetail?.followNumber ?? 0)关注")
+                }
+            }
         }
     }
 }
@@ -32,9 +41,12 @@ struct ActivityListCellView_Previews: PreviewProvider {
 }
 
 struct ActivityListImageView: View {
+    
+    var imageUrlStr: String = ""
     var body: some View {
         GeometryReader { geo in
-            Image("haizei")
+            
+            KFImage(URL(string: imageUrlStr))
                 .resizable()
                 .background(Color.red)
                 .frame(width: geo.size.width, height: geo.size.height)

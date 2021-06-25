@@ -17,5 +17,68 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B8EDE35-8978-413B-9F84-A37B899CA196"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "wandaFilmSwiftUI/Movie/MovieDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6B8EDE35-8978-413B-9F84-A37B899CA196 - a3cd0c0bb1fcd1b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "wandaFilmSwiftUI.MovieDetailView.body.getter : some"
+                  moduleName = "wandaFilmSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diaohongrui/swiftUI/wandaFilmSwiftUI/Movie/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "29">
+               </Location>
+               <Location
+                  uuid = "6B8EDE35-8978-413B-9F84-A37B899CA196 - 90af480eed590200"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (wandaFilmSwiftUI.MovieDetail) -&gt; SwiftUI.Text in wandaFilmSwiftUI.MovieDetailView.body.getter : some"
+                  moduleName = "wandaFilmSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diaohongrui/swiftUI/wandaFilmSwiftUI/Movie/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "147">
+               </Location>
+               <Location
+                  uuid = "6B8EDE35-8978-413B-9F84-A37B899CA196 - 90af480eed590267"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (wandaFilmSwiftUI.MovieDetail) -&gt; SwiftUI.Text in wandaFilmSwiftUI.MovieDetailView.body.getter : some"
+                  moduleName = "wandaFilmSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diaohongrui/swiftUI/wandaFilmSwiftUI/Movie/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "948">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

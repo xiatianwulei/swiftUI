@@ -14,6 +14,8 @@ struct ContentView: View {
     }
     
     let movieListInfo = MovieListInfo()
+    let activityListInfo = ActivityListInfoViewModel()
+    
     
     @State  private var selection: WandaFilmTab = .home
     
@@ -23,10 +25,12 @@ struct ContentView: View {
             MovieList().tabItem {
                 Label("电影", systemImage: "plus")
             }
+            .environmentObject(movieListInfo)
             ActivityListView()
                 .tabItem {
                     Label("活动", systemImage: "star")
                 }
+                .environmentObject(activityListInfo)
             MineHomeView().tabItem {
                 Label("我的", systemImage: "heart")
             }
@@ -34,7 +38,8 @@ struct ContentView: View {
 //            ContentViewFrame().tabItem {
 //                Label("studyFrameUI", systemImage: "heart")
 //            }
-        }.environmentObject(movieListInfo)
+        }
+        
     }
 }
 

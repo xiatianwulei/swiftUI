@@ -14,15 +14,20 @@ struct MovieList: View {
     var body: some View {
         
         NavigationView {
+            
+            
             List {
                 ForEach(movieListInfo.movieList) {(element) in
-                    MovieListInfoCell(movieDetail: element) { isLike in
-                        element.isLike = isLike
-                        movieListInfo.toggle(element)
-                    }
-                    
+                    NavigationLink(destination: MovieDetailView()    , label: {
+                        MovieListInfoCell(movieDetail: element) { isLike in
+                            element.isLike = isLike
+                            movieListInfo.toggle(element)
+                        }
+                    })
                 }
             }
+            
+            
             .navigationTitle("电影列表")
             .navigationBarItems(leading: Button(action: {
                 let movieDetail = MovieDetail()
@@ -39,6 +44,7 @@ struct MovieList: View {
             }, label: {
                 Text("清除电影")
             }))
+            
         }
     }
 }
